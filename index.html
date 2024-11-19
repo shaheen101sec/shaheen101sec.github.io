@@ -73,26 +73,6 @@
             box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
             animation: bounce 2s infinite;
         }
-        .skills ul {
-            list-style: none;
-            padding: 0;
-        }
-        .skills ul li {
-            background: #dbeafe;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            color: #1e3a8a;
-            font-weight: bold;
-        }
-        .motivational {
-            font-style: italic;
-            color: #3b82f6;
-            text-align: center;
-            margin-top: 20px;
-            animation: fadeIn 2s ease-in-out forwards;
-        }
         .social-links {
             display: flex;
             gap: 15px;
@@ -112,6 +92,31 @@
         .social-links a:hover {
             background-color: #60a5fa;
             color: #ffffff;
+        }
+        .motivational {
+            font-style: italic;
+            color: #3b82f6;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .service-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .service-button a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #3b82f6;
+            padding: 15px 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+        }
+        .service-button a:hover {
+            background-color: #2563eb;
+            transform: translateY(-5px);
         }
 
         /* Animations */
@@ -133,20 +138,6 @@
                 transform: translateY(-10px);
             }
         }
-
-        /* Section-specific Animations */
-        section:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-        section:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        section:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-        section:nth-child(4) {
-            animation-delay: 0.4s;
-        }
     </style>
 </head>
 <body>
@@ -164,20 +155,16 @@
         <section id="home" class="profile-pic">
             <img src="b6.jpg" alt="shaheen101sec Profile Picture">
             <p class="motivational">
-                "If you love something, work on it every day and every hour to be the best as you can."
+                "If you love something, work on it every day and every hour to be the best you can."
             </p>
+            <div class="service-button">
+                <a href="service.html">🔗 View My Service</a>
+            </div>
         </section>
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Welcome to my profile! I am Shaheen, a Sudanese professional in web hunting,
-                ethical hacking and cybersecurity. I started working in this field several years ago,
-                driven by curiosity and a desire to improve and secure websites and how to achieve
-                the highest levels of security, through a deep understanding of hacking methods and 
-                fields and their relationship to website structure. All this in addition to building
-                websites with innovative designs and high security.
-                
-                "Special thanks to my father who always supported me on my way to my goal."
+Welcome to my profile! I am Shaheen, a Sudanese professional in web hunting, ethical hacking and cybersecurity. I started working in this field several years ago, driven by curiosity and a desire to improve and secure websites and how to achieve the highest levels of security, through a deep understanding of hacking methods and fields and their relationship to website structure. All this in addition to building websites with innovative designs and high security. "Special thanks to my father who always supported me on my way to my goal." 
             </p>
         </section>
         <section id="skills">
@@ -214,6 +201,5 @@
                 <a href="https://hackerone.com/shah3n101sc?type=user" target="_blank">HackerOne</a>
             </div>
         </section>
-    </div>
 </body>
 </html>
